@@ -1,0 +1,53 @@
+body {
+	background-color: #262C3A;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+
+
+.game {
+	margin-top: 250px;
+}
+.btn {
+	margin-top: 20px;
+}
+
+h3, span  {
+	color: #fff;
+
+}
+img {
+	margin-top: 30px;
+}
+.pick {
+	margin-top: 30px;
+
+}
+.header {
+	margin-bottom: 20px;
+}
+.margin {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.label-success {
+	background-color: #A2D5AF;
+}
+.label-danger {
+	background-color: #9A55A4;
+}
+.label-default {
+	background-color: #E98085;
+}
+.label-info {
+	background-color:#F5D55C;
+}
+.label-warning {
+	background-color: #83B3F3;
+}
+
+@media screen and (max-width: 992px) {
+	.game {
+		margin-top: 80px;
+	}
+}
