@@ -49,20 +49,21 @@ img {
 	background-color: #83B3F3;
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
 	.game {
-		margin-top: 80px;
-	}
-}
-@media screen and (max-width: 768px) {
-	
-	.col-md-6 {
-		width: 100%;
-		display:flex;
+		margin-top: 800px;
+		text-align:center;
+		display: flex;
 		justify-content: center;
-		align-items: center;
-		flex-wrap:wrap;
-	
-	}
+		flex-direction: column;
+		}
+	.rules {
+		text-align:center;
 
+	}
+	img {
+		margin: 0 auto;
+		margin-top: 100px;
+	}
 }
+
