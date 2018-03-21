@@ -11,6 +11,9 @@ body {
 .btn {
 	margin-top: 20px;
 }
+h3 {
+	margin-top: 50px;
+}
 
 h3, span  {
 	color: #fff;
@@ -59,7 +62,7 @@ img {
 		justify-content: center;
 		align-items: center;
 		flex-wrap:wrap;
-		flex-direction: column;
+	
 	}
 
 }
