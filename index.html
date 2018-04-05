@@ -1,123 +1,127 @@
+<!DOCTYPE>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Page title</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+
+<head>
+	<meta charset="utf-8">
+	<title>Page title</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
 	<div class="container header">
-			<h3 class= "text-center">
-				Welcome to the game :
-				<span class="label label-default">Rock</span>
-				<span class="label label-info">Paper</span>
-				<span class="label label-danger">Scissors</span>
-				<span class="label label-success">Lizard</span>
-				<span class="label label-warning">Spock</span>
-			</h3>
-		</div>
+		<h3 class="text-center">
+			Welcome to the game :
+			<span class="label label-default">Rock</span>
+			<span class="label label-info">Paper</span>
+			<span class="label label-danger">Scissors</span>
+			<span class="label label-success">Lizard</span>
+			<span class="label label-warning">Spock</span>
+		</h3>
 	</div>
-		<div class="container ">
-			<div class="row ">
-				<div class="col-md-6 col-xs-12 rules">
-					<h3>
+	</div>
+	<div class="container ">
+		<div class="row ">
+			<div class="col-md-6 col-xs-12 rules">
+				<h3>
 					Rules:</h3>
-					<img src="images/rules.jpg" class="img-responsive center" alt="r">
-				</div>
-				<div class="col-md-6  game">
-					<div id="js-newGameElement" class="margin">
+				<img src="images/rules.jpg" class="img-responsive center" alt="r">
+			</div>
+			<div class="col-md-6  game">
+				<div id="js-newGameElement" class="margin">
 					<div>
-						<button  id="js-newGameButton" class="btn btn-default text-center">
-						New game
+						<button id="js-newGameButton" class="btn btn-default text-center">
+							New game
 						</button>
 					</div>
-					</div>
-					<div id="js-playerPickElement" class=" margin text-center ">
-						<div>
-							<button id="js-playerPick_rock" class="btn btn-default">
+				</div>
+				<div id="js-playerPickElement" class=" margin text-center ">
+					<div>
+						<button id="js-playerPick_rock" class="btn btn-default">
 							<span class="badge">
 								<i class="fa fa-hand-rock-o" aria-hidden="true"></i>
 							</span>
-									Rock
+							Rock
 						</button>
-						<button id="js-playerPick_paper"  class="btn btn-default">
+						<button id="js-playerPick_paper" class="btn btn-default">
 							<span class="badge">
 								<i class="fa fa-hand-paper-o" aria-hidden="true"></i>
 							</span>
-									Paper
+							Paper
 						</button>
-						<button id="js-playerPick_scissors"  class="btn btn-default">
+						<button id="js-playerPick_scissors" class="btn btn-default">
 							<span class="badge">
 								<i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
 							</span>
-									Scissors
+							Scissors
 						</button>
-						<button id="js-playerPick_lizard"  class="btn btn-default">
+						<button id="js-playerPick_lizard" class="btn btn-default">
 							<span class="badge">
 								<i class="fa fa-hand-lizard-o" aria-hidden="true"></i>
 							</span>
-									Lizard
+							Lizard
 						</button>
-						<button id="js-playerPick_spock"  class="btn btn-default">
+						<button id="js-playerPick_spock" class="btn btn-default">
 							<span class="badge">
 								<i class="fa fa-hand-spock-o" aria-hidden="true"></i>
 							</span>
-									Spock
+							Spock
 						</button>
-							</div>
 					</div>
-					<div id="js-resultsTableElement" class=" text-center">
-						<div class="row">
-							<div class="col-xs-4">
-								<span id="js-playerPoints" class="badge">
+				</div>
+				<div id="js-resultsTableElement" class=" text-center">
+					<div class="row">
+						<div class="col-xs-4">
+							<span id="js-playerPoints" class="badge">
 								0
-								</span>
-								<span id="js-playerName">
+							</span>
+							<span id="js-playerName">
 								Player Name
-								</span>
-							</div>
-							<div class="col-xs-4">
-								VS.
-							</div>
-							<div class="col-xs-4">
-								<span id="js-computerPoints" class="badge">
+							</span>
+						</div>
+						<div class="col-xs-4">
+							VS.
+						</div>
+						<div class="col-xs-4">
+							<span id="js-computerPoints" class="badge">
 								0
-								</span>
-								Computer
-							</div>
+							</span>
+							Computer
 						</div>
-						<div class="row">
-							<div class="col-xs-4 ">
-								<span id="js-playerPick">
-									Player selection
-								</span>
-							</div>
-							<div class="col-xs-4"></div>
-							<div class="col-xs-4 ">
-								<span id="js-computerPick">
-									Computer selection
-								</span>
-							</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-4 ">
+							<span id="js-playerPick">
+								Player selection
+							</span>
 						</div>
-						<div class="row">
-							<div class="col-xs-4">
-								<span id="js-playerResult">
-									Player Score
-								</span>
-							</div>
-							<div class="col-xs-4"></div>
-							<div class="col-xs-4">
-								<span id="js-computerResult">
-									Computer Score
-								</span>
-							</div>
+						<div class="col-xs-4"></div>
+						<div class="col-xs-4 ">
+							<span id="js-computerPick">
+								Computer selection
+							</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-4">
+							<span id="js-playerResult">
+								Player Score
+							</span>
+						</div>
+						<div class="col-xs-4"></div>
+						<div class="col-xs-4">
+							<span id="js-computerResult">
+								Computer Score
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="js/scripts.js"></script>
-  </body>
+</body>
+
 </html>
