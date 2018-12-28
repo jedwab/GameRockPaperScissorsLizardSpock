@@ -46,7 +46,7 @@ function setGameElements() {
             resultsElem.style.display = 'block';
             break;
         case 'ended':
-            newGameBtn.innerText = 'Jeszcze raz';
+            newGameBtn.innerText = 'One more time';
         case 'notStarted':
         default:
             newGameElem.style.display = 'block';
@@ -61,7 +61,7 @@ function resetScores() {
 }
 
 function newGame() {
-    player.name = prompt('Please enter your name', 'imię gracza');
+    player.name = prompt('Please enter your name', "Player's name");
     if (player.name) {
         resetScores();
         gameState = 'started';
@@ -124,10 +124,10 @@ function whoWins() {
         gameState = 'ended';
         setGameElements();
         if (player.score === 10) {
-            alert('Wygrał gracz');
+            alert('Player won!');
         }
         else {
-            alert('Wygrał Komputer');
+            alert('Computer won!');
         }
         resetScores();
         setGamePoints();
